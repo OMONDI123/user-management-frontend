@@ -22,7 +22,6 @@ import {
   Dashboard as DashboardIcon,
   Shield as ShieldIcon,
   Close as CloseIcon,
-  IconButton,
 } from "@mui/icons-material";
 import IconButtonMui from "@mui/material/IconButton";
 

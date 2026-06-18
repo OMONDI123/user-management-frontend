@@ -10,7 +10,6 @@ export interface StatusEnum {
   description: string;
 }
 
-// ─── Address ──────────────────────────────────────────────────────────────────
 
 export interface UserAddress {
   addressId?: number;
@@ -22,15 +21,14 @@ export interface UserAddress {
   primary: boolean;
 }
 
-// ─── User ─────────────────────────────────────────────────────────────────────
 
 export interface UserModel {
   userId?: number;
   email: string;
   firstName: string;
   lastName: string;
-  phoneNumer?: string; // Note: typo preserved from backend spec
-  role: RoleEnum;
+  phoneNumer?: string; 
+    role: RoleEnum;
   userAddresses?: UserAddress[];
 }
 
@@ -45,7 +43,6 @@ export interface UserResponse {
   userAddresses: UserAddress[];
 }
 
-// ─── Pagination ───────────────────────────────────────────────────────────────
 
 export interface PageSort {
   sorted: boolean;
@@ -76,7 +73,6 @@ export interface Page<T> {
   empty: boolean;
 }
 
-// ─── Filter State ─────────────────────────────────────────────────────────────
 
 export interface UserFilters {
   status: string;
